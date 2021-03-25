@@ -1,4 +1,4 @@
-function Person(props) {
+/* function Person(props) {
   return (
     <div className="person">
       <h1>Name: {props.name}</h1>
@@ -11,3 +11,22 @@ function Person(props) {
 
 ReactDOM.render(<Person name="Next" age="55" />, document.querySelector('#p2'));
 
+ */
+ 
+ function Person(props) {
+  return (
+    <div className="person">
+      <h1>Name: {props.name}</h1>
+      <p>Age: {props.age}</p>
+    </div>
+  );
+}
+
+var anyVariable=(
+  <div>
+    <Person name="Pratik" age="32" />
+    <Person name="AnotherUser" age="55" />
+  </div>
+);
+
+ReactDOM.render(anyVariable, document.querySelector('#root'));
